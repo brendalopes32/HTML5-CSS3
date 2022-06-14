@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+<Style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+        margin: 0px;
+    }
+
+    Header {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        color: rgb(100, 100, 175);
+        text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.205);
+    }
+
+    nav{
+        background-color: rgb(102, 102, 102);
+        padding: 3px;
+        box-shadow: 7px 5px 2px rgba(0, 0, 0, 0.322);
+    }
+
+    nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 30px;
+    }
+
+    nav > a:hover {
+        text-decoration: underline;
+    }
+
+    #assuntos {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 40px;
+        text-align: right;
+    }
+
+    main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px 0px;
+        box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.185);
+    }
+
+    article {
+        background-color: lightgray;
+        text-align: justify;
+        padding: 5px;
+    }
+
+    article > aside {
+        background-color: rgb(165, 165, 165);
+        font-size: 12px;
+    }
+
+    article > p {
+        text-indent: 10px;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 6px;
+        margin: 0px;
+    }
+
+    footer > p {
+        margin:0px;
+    }
+
+    #bola {
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    #bola > p {
+        text-align: center;
+        font-size: 70px;
+    }
+</Style>
+
+</head>
+<body>
+    <header>
+      <h1>A vida sem filtros</h1>
+      <nav>
+          <a href="#">Enfeite</a>
+          <a href="#">Enfeite</a>
+          <a href="#">Enfeite</a>
+          <a href="#">Enfeite</a>
+          <a href="#">Enfeite</a>
+      </nav>
+    </header>
+    <main>
+        <section id="assuntos"> 
+            <p>Vida do Analista de suporte</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>O pobre não tem 1 minuto!</h2>
+                <p>"Quando eu acho que vai sobrar dinheiro, lembro que tenho que pagar uma conta ou fico doente. Quando tento ser fit e vou andando para casa, começa a chover no meio do caminho. Tudo dá errado!"</p>
+                <aside>
+                    <p>Relatos do pobre no final do dia</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Fui vitíma de um convite maravilhoso</h2>
+                <p>"Todo dia é a mesma coisa. Eu tento não comer um docinho e a Hello Cakes está bem na entrada de onde eu almoço. Já é difícil ignorar, e a amiga ainda fica me chamando pra comer. Não aguento mais!"</p>
+                <aside>
+                    <p>Dizem pessoas que comem e ficam com a consciência pesada</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+            <p>Desenvolvido por Brenda Lopes</p>
+    </footer>
+    <div id="bola">
+            <P>&#x1F98A</P>    
+    </div>
+</body>
+</html>

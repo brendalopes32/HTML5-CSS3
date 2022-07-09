@@ -41,21 +41,21 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="2" class="titulo">Área</th>
-                <th rowspan="2" class="titulo">Disciplinas</th>
-                <th colspan="2" class="titulo">Notas</th>
-                <th rowspan="2" class="titulo">Média</th>
+                <th rowspan="2" class="titulo" scope="col">Área</th>
+                <th rowspan="2" class="titulo" scope="colgroup">Disciplinas</th>
+                <th colspan="2" class="titulo" scope="colgroup">Notas</th>
+                <th rowspan="2" class="titulo" scope="col">Média</th>
             </tr>
 
             <tr>
-                <th class="titulo">Nota 1</th>
-                <th class="titulo">Nota 2</th>
+                <th class="titulo" scope="col">Nota 1</th>
+                <th class="titulo" scope="col">Nota 2</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td class="centralizacao">Matemática</td>
                 <td>9.0</td>
                 <td>10.0</td>
@@ -84,12 +84,12 @@
             </tr>
 
             <tr>
-                <th colspan="4" class="titulo" id="centralizacao-1">Média de Exatas</th>
+                <th colspan="4" class="titulo" id="centralizacao-1" scope="row">Média de Exatas</th>
                 <td class="titulo"><strong>7.9</strong></td>
             </tr>
 
             <tr>
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td class="centralizacao">História</td>
                 <td>10.0</td>
                 <td>8.0</td>
@@ -104,7 +104,7 @@
             </tr>
 
             <tr>
-                <th colspan="4" class="titulo" id="centralizacao-2">Media de Humanas</th>
+                <th colspan="4" class="titulo" id="centralizacao-2" scope="row">Media de Humanas</th>
                 <td class="titulo"><strong>8.9</strong></td>
             </tr>
         </tbody>

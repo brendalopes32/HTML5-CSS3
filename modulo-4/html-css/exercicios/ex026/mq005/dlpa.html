@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Tipos de Demonstrações Financeiras</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="dre.html">DRE</a></li>
+                <li><a href="index.html">Fluxo de Caixa</a></li>
+                <li><a href="balanco.html">Balanço Patrimonial</a></li>
+                <li><a href="notasexplicativas.html">Notas Explicativas</a></li>
+                <li><a href="dva.html">DVA</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>DPLA</h2>
+
+            <p>A DLPA (Demonstração de Lucros ou Prejuízos Acumulados) é uma demonstração contábil cujo principal objetivo é apresentar as movimentações ocorridas nas contas Lucros ou Prejuízos Acumulados, do Patrimônio Líquido.</p>
+
+            <p>O lucro líquido do período de uma empresa é apurado pela DRE (Demonstração de Resultados do Exercício). Assim, após o encerramento do período, esse lucro ou o prejuízo é transferido para o Patrimônio Líquido, para ser distribuído. Desse modo, a DLPA apresenta, basicamente, como será feita essa distribuição, por meio das contas Lucros ou Prejuízos Acumulados.</p>
+
+            <p>Essa demonstração contábil está disposta na Lei 6.404/76, a famosa Lei das Sociedades por Ações. Segundo essa norma, a DLPA é uma demonstração obrigatória, ou seja, ela precisa ser elaborada pela empresa ao final de cada exercício financeiro.</p>
+
+            <p>Já o CPC 26, Pronunciamento Contábil que diz respeito à Apresentação das Demonstrações Contábeis, não faz nenhuma menção à Demonstração de Lucros ou Prejuízos Acumulados, não sendo, assim, obrigatória, segundo este pronunciamento.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://www.instagram.com/brenda.lopes32/">Brenda Lopes</a></p>
+    </footer>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
